@@ -15,7 +15,10 @@ if __name__ == '__main__':
         exit(1)
 # найдем произведение положительных элементов
     S = 1
-    for i in A:
-        if i > 0:
-            S *= i
+    b = [i for i in A if i > 0]
+    for i in b:
+        S *= i
+  #  for i in A:
+  #      if i > 0:
+   #         S *= i
     print(f'Произведение положительных частей списка равно {S}')
